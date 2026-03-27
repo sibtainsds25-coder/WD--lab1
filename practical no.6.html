@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scholarship Application Form</title>
+</head>
+
+<body>
+
+<h2>Scholarship Application Form</h2>
+
+<form>
+
+<!-- Personal Information -->
+<fieldset>
+    <legend>Personal Information</legend>
+
+    <label>Full Name:</label><br>
+    <input type="text" name="fullname"><br><br>
+
+    <label>Email:</label><br>
+    <input type="email" name="email"><br><br>
+
+    <label>Phone Number:</label><br>
+    <input type="tel" name="phone"><br><br>
+
+</fieldset>
+<br>
+
+<!-- Gender Selection -->
+<fieldset>
+    <legend>Gender</legend>
+
+    <input type="radio" name="gender" value="male"> Male <br>
+    <input type="radio" name="gender" value="female"> Female <br>
+    <input type="radio" name="gender" value="other"> Other
+
+</fieldset>
+<br>
+
+<!-- Education Details -->
+<fieldset>
+    <legend>Education Details</legend>
+
+    <label>Select Your Course:</label><br>
+    <select name="course">
+        <option>BCA</option>
+        <option>BSc</option>
+        <option>BTech</option>
+        <option>BA</option>
+        <option>BCom</option>
+    </select>
+
+</fieldset>
+<br>
+
+<!-- Skills Section -->
+<fieldset>
+    <legend>Skills</legend>
+
+    <input type="checkbox" name="skill1"> Computer Knowledge <br>
+    <input type="checkbox" name="skill2"> Programming <br>
+    <input type="checkbox" name="skill3"> Communication Skills <br>
+    <input type="checkbox" name="skill4"> Leadership
+
+</fieldset>
+<br>
+
+<!-- Submit Button -->
+<input type="submit" value="Submit Application">
+<input type="reset" value="Clear Form">
+
+</form>
+
+</body>
+</html>
