@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute Page</title>
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f8f9fa, #e9ecef);
+            color: #333;
+        }
+
+        /* Header with Shining Text */
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #343a40;
+            color: white;
+            border-bottom: 5px solid #ffc107;
+        }
+
+        header h1 {
+            font-size: 3em;
+            background: linear-gradient(90deg, #ffc107, #ff6f61, #28a745, #17a2b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shine 3s linear infinite;
+        }
+
+        @keyframes shine {
+            0% { background-position: 0%; }
+            100% { background-position: 200%; }
+        }
+
+        /* Navigation Board */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #007bff;
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Main Content Layout */
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .tribute-card {
+            background-color: white;
+            border: 2px solid #343a40;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 20px;
+            max-width: 300px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .tribute-card:hover {
+            transform: scale(1.05);
+        }
+
+        .tribute-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .tribute-card h2 {
+            margin: 15px 0 10px 0;
+            color: #007bff;
+        }
+
+        .tribute-card p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #343a40;
+            color: white;
+            border-top: 5px solid #ffc107;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Tribute to Great Minds</h1>
+    </header>
+
+ 
+    <nav>
+        <a href="#about">About</a>
+        <a href="#people">People</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="tribute-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxSwCY9F--SzRe5tRL8fpupQeIRc4auqHR-MiHYkCSXYQjRqD9HYBDB9aXgh19YExZzjhUHhPFBQaOK_jM9oAGNlIUgC6hza9goKNYLWw&s=10" alt=" Albert einstein ">
+            <h2>Person 1</h2>
+            <p>Known for incredible achievements in science and technology.</p>
+        </div>
+        <div class="tribute-card">
+            <img src="https://res.cloudinary.com/aenetworks/image/upload/c_fill,ar_2,w_3840,h_1920,g_auto/dpr_auto/f_auto/q_auto:eco/v1/mahatma-gandhi-gettyimages-102701091-2048x2048-1?_a=BAVAZGB00" alt="Mahatma Gandhi">
+            <h2>Person 2</h2>
+            <p>A visionary leader who changed the course of history.</p>
+        </div>
+        <div class="tribute-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Pablo_picasso_1.jpg" alt="Pablo Picasso">
+            <h2>Person 3</h2>
+            <p>An artist whose creativity inspired generations.</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2026 Tribute Page. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
